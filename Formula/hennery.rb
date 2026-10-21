@@ -1,21 +1,21 @@
 class Hennery < Formula
   desc "Self-hosted cockpit for ACP coding agents"
   homepage "https://github.com/marcinwadon/hennery"
-  version "0.1.4"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/marcinwadon/hennery/releases/download/v0.1.4/hennery-aarch64-apple-darwin.tar.xz"
-      sha256 "a6b567c2aea8ac6ecb7d8803847a3171a3d687fb66d1cf722eb3a905b4a4ea79"
+      url "https://github.com/marcinwadon/hennery/releases/download/v0.2.0/hennery-aarch64-apple-darwin.tar.xz"
+      sha256 "6b1f13c83fd12e510b74415db77e2bb4d41a96a35ffe2c9424da1155782ece19"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/marcinwadon/hennery/releases/download/v0.1.4/hennery-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "a8f0910df414edc447d03c6c4c1cdb3784d0fa10bac0c881dee51c4e3a4a742d"
+      url "https://github.com/marcinwadon/hennery/releases/download/v0.2.0/hennery-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "a04e9893465b169e93e81b4df7bd200f4043c8f9cd2949f75bd4044e3c8f28bc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/marcinwadon/hennery/releases/download/v0.1.4/hennery-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "83d6fe147c20eace44d53cf58d40b1a36d5477f769380198f13274a19d61a16d"
+      url "https://github.com/marcinwadon/hennery/releases/download/v0.2.0/hennery-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "6bae5376abb1437924cccf1c78009aff2853c61917220e9638012e392c3bda72"
     end
   end
   license "AGPL-3.0-only"
